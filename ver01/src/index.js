@@ -1,11 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import { OneProvider } from "./context/context1";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
+  <OneProvider>
     <App />
+  </OneProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

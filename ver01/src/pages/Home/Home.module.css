@@ -1,0 +1,65 @@
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(270deg, black, rgb(83, 83, 83));
+  transition: all .5s ease-in;
+}
+
+.main-text {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-h1 {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+  animation-name: moveRight;
+  animation-duration: 1.5s;
+}
+.dummy {
+  color: rgb(229, 1, 1);
+}
+.main-p {
+  font-size: 2rem;
+  color: #777;
+}
+
+.btn {
+  border: 2px solid red;
+  padding: 1.5rem 3rem;
+  font-size: 2rem;
+  position: absolute;
+  top: 65%;
+  font-weight: 700;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.btn:hover {
+  color: #fff;
+  background: #f32121;
+  box-shadow: 0 0 10px #f32121, 0 0 40px #f32121, 0 0 80px #f32121;
+}
+
+@keyframes moveRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-8rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 100vw;
+    padding: 3rem;
+  }
+}
