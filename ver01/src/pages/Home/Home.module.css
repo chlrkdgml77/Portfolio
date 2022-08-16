@@ -15,7 +15,7 @@
   align-items: center;
 }
 .main-h1 {
-  font-size: 6rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
   animation-name: moveRight;
   animation-duration: 1.5s;
@@ -24,7 +24,7 @@
   color: rgb(229, 1, 1);
 }
 .main-p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #777;
 }
 

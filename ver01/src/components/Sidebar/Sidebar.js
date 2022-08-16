@@ -72,6 +72,11 @@ const SidebarContainer = styled.div`
     transform: translate(0);
     z-index: 999;
   }
+  @media screen and (min-width: 992px) {
+  .sidebar {
+    display: none;
+  }
+}
 `;
 
 export default Sidebar;
