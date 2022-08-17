@@ -8,6 +8,7 @@ import Projects from "./pages/Projects/Projects";
 import SingleProject from "./pages/Projects/SingleProject";
 import Error from "./pages/Error/Error";
 import Sidebar from "./components/Sidebar/Sidebar";
+import Contact from "./pages/Contact/Contact";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           path="projects/:id"
           element={<SingleProject></SingleProject>}
         ></Route>
+        <Route path="contact" element={<Contact></Contact>}></Route>
         <Route path="*" element={<Error></Error>}></Route>
       </Routes>
     </BrowserRouter>

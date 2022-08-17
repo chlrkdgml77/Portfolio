@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useReducer } from 'react'
 
 const initialState = {
-  isSidebarOpen: true,
+  isSidebarOpen: false,
 }
 
 const reducer = (state, action) => {
