@@ -15,10 +15,10 @@ const Projects = () => {
               <div className={styles.filledbar}></div>
             </div>
             <div className={styles.circle}>
-              <a href="#" className={styles.a}>
+              <div className={styles.a}>
                 More Details
                 <div className={styles.wave}></div>
-              </a>
+              </div>
             </div>
           </div>
         </Link>
@@ -30,10 +30,10 @@ const Projects = () => {
               <div className={styles.filledbar}></div>
             </div>
             <div className={styles.circle}>
-              <a href="#" className={styles.a}>
+              <div className={styles.a}>
                 More Details
                 <div className={styles.wave}></div>
-              </a>
+              </div>
             </div>
           </div>
         </Link>
@@ -45,10 +45,10 @@ const Projects = () => {
               <div className={styles.filledbar}></div>
             </div>
             <div className={styles.circle}>
-              <a href="#" className={styles.a}>
+              <div className={styles.a}>
                 More Details
                 <div className={styles.wave}></div>
-              </a>
+              </div>
             </div>
           </div>
         </Link>
@@ -60,10 +60,10 @@ const Projects = () => {
               <div className={styles.filledbar}></div>
             </div>
             <div className={styles.circle}>
-              <a href="#" className={styles.a}>
+              <div className={styles.a}>
                 More Details
                 <div className={styles.wave}></div>
-              </a>
+              </div>
             </div>
           </div>
         </Link>
