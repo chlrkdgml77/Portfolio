@@ -1,0 +1,45 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container img {
+  height: 27rem;
+  margin-right: 6rem;
+}
+
+.lists {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 4rem;
+}
+
+.list {
+  margin-bottom: 3rem;
+}
+
+.modal h3 {
+  color: red;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.title h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-right: 1rem;
+  transition: all 0.5s;
+}
+.title h2:hover {
+  color: red;
+}
+.title svg {
+  font-size: 2rem;
+  color: red;
+}
