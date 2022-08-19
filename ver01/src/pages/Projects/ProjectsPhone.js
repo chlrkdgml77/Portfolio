@@ -41,7 +41,7 @@ const ProjectsPhone = () => {
   return (
     <div className={styles.bg}>
       <div className={styles.container}>
-        <Link to="/projects/m1">
+        <Link to={`/projects/m${index}`}>
           <div className={styles.card}>
             <h3 className={styles.title}>{title}</h3>
             <div className={styles.bar}>

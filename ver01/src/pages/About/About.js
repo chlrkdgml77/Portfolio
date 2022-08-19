@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import Modal from "../../UI/Modal";
+import Chart from "../../components/Chart/Chart";
 
 import styles from "./About.module.css";
 import { FaArrowAltCircleRight } from "react-icons/fa";
@@ -17,7 +18,7 @@ const About = () => {
 
   return (
     <div className={styles.container}>
-      <img src={Img}></img>
+      <Chart></Chart>
       <ul className={styles.lists}>
         <li className={styles.list}>
           {modalShow && (

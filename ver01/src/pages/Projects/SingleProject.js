@@ -10,14 +10,18 @@ const SingleProject = () => {
   const projects = ProjectsData.find((project) => (
     project.id === id
   ))
+  
+  const {image, name, desc, tool} = projects;
 
   return (
     <div className={styles.container}>
       <div className={styles.img}>
-        <img src={projects.image}></img>
+        <img src={image}></img>
       </div>
       <div className={styles.text}>
-        <h2>{projects.name}</h2>
+        <h2><span>project name: </span>{name}</h2>
+        <p><span>project desc: </span>{desc}</p>
+        <h4><span>used tool: </span>{tool}</h4>
       </div>
     </div>
   )

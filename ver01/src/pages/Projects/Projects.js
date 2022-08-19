@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <div className={styles.bg}>
       <div className={styles.container}>
-        <Link to="/projects/m1">
+        <Link to="/projects/m0">
           <div className={styles.card}>
             <h3 className={styles.title}>Portfolio Project</h3>
             <div className={styles.bar}>
@@ -22,7 +22,7 @@ const Projects = () => {
             </div>
           </div>
         </Link>
-        <Link to="/projects/m2">
+        <Link to="/projects/m1">
           <div className={styles.card}>
             <h3 className={styles.title}>Toy Project_<br></br>TransferMarket</h3>
             <div className={styles.bar}>
@@ -37,7 +37,7 @@ const Projects = () => {
             </div>
           </div>
         </Link>
-        <Link to="/projects/m3">
+        <Link to="/projects/m2">
           <div className={styles.card}>
             <h3 className={styles.title}>Toy Project_<br></br>E-commerce</h3>
             <div className={styles.bar}>
@@ -52,7 +52,7 @@ const Projects = () => {
             </div>
           </div>
         </Link>
-        <Link to="/projects/m4">
+        <Link to="/projects/m3">
           <div className={styles.card}>
             <h3 className={styles.title}>Dummy</h3>
             <div className={styles.bar}>
