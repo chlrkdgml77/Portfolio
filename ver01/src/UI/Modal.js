@@ -1,7 +1,8 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import ReactDOM from "react-dom";
 
 import styles from "./Modal.module.css";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const dummy_text = [
   {
@@ -14,7 +15,11 @@ const dummy_text = [
     title2: "Pros and Cons",
     desc: "제 장점은 어떤 일에 흥미가 생기면 그 일에 대하여 끝까지 파고드는 점입니다. 앞서 언급했듯이 저는 프로그래밍 입문을 게임 모드로 시작하였습니다. 모드를 만들기 위해 한국 커뮤니티, 유튜브에서 관련된 정보를 거의 모두 찾아봤습니다. 그래도 안 나오거나 모르는 내용이 있었을 때는 외국 커뮤니티, 유튜브등을 참고했고, 그래도 부족하면 외국 사이트에 직접 질문글을 올려서 어떻게든 해결했습니다. 이러한 점은 자신 있게 장점이라고 말할 수 있습니다.",
   },
-  { title: "목표 및 태도", title2: "Goals and Attitudes", desc: "사실 경력에도 적혀져 있지만, 저에게 사회생활 경험은 편의점 업무밖에 없었습니다. 하지만 이 편의점 업무를 하는 1년간 저는 정말 많은 것을 배웠습니다. 어떻게 보면 간단해 보이는 편의점 업무에도 다양한 규칙과 흐름이 존재하였고, 이를 배워가는 과정이 매우 의미 있는 시간이었다고 생각합니다. 이와 같이 입사 후에 어떠한 역할을 수행하던 그 과정에서 많은 것을 배우고 싶습니다. 이를 위해 항상 열려있는 자세로 새로운 것을 받아드릴 준비를 하고있고, 그것을 내 것으로 만들기 위한 노력을 하겠습니다.f" },
+  {
+    title: "목표 및 태도",
+    title2: "Goals and Attitudes",
+    desc: "사실 경력에도 적혀져 있지만, 저에게 사회생활 경험은 편의점 업무밖에 없었습니다. 하지만 이 편의점 업무를 하는 1년간 저는 정말 많은 것을 배웠습니다. 어떻게 보면 간단해 보이는 편의점 업무에도 다양한 규칙과 흐름이 존재하였고, 이를 배워가는 과정이 매우 의미 있는 시간이었다고 생각합니다. 이와 같이 입사 후에 어떠한 역할을 수행하던 그 과정에서 많은 것을 배우고 싶습니다. 이를 위해 항상 열려있는 자세로 새로운 것을 받아드릴 준비를 하고있고, 그것을 내 것으로 만들기 위한 노력을 하겠습니다.f",
+  },
 ];
 
 const Backdrop = (props) => {
@@ -22,16 +27,45 @@ const Backdrop = (props) => {
 };
 
 const ModalOverlay = (props) => {
+  const [index, setIndex] = useState(0);
+  const { title, title2, desc } = dummy_text[index];
+
+  const indexPlusHandler = () => {
+    setIndex((index) => {
+      let newIndex = index + 1;
+      return checkIndex(newIndex);
+    });
+  };
+  const indexMinusHandler = () => {
+    setIndex((index) => {
+      let newIndex = index - 1;
+      return checkIndex(newIndex);
+    });
+  };
+  const checkIndex = (num) => {
+    if (num > dummy_text.length - 1) {
+      return 0;
+    }
+    if (num < 0) {
+      return dummy_text.length - 1;
+    }
+    return num;
+  };
+
   return (
     <div className={styles.modal}>
-      {dummy_text.map((data) => {
-        return (
-          <div className={styles.content}>
-            <h3>{data.title2}</h3>
-            <p>{data.desc}</p>
-          </div>
-        );
-      })}
+      <div className={styles.content}>
+        <h3>{title2}</h3>
+        <p>{desc}</p>
+      </div>
+      <div className={styles["button-container"]}>
+        <button className={styles["prev-btn"]} onClick={indexMinusHandler}>
+          <FaChevronLeft></FaChevronLeft>
+        </button>
+        <button className={styles["next-btn"]} onClick={indexPlusHandler}>
+          <FaChevronRight></FaChevronRight>
+        </button>
+      </div>
     </div>
   );
 };

@@ -11,7 +11,7 @@ const SingleProject = () => {
     project.id === id
   ))
   
-  const {image, name, desc, tool} = projects;
+  const {image, name, desc, tool, url} = projects;
 
   return (
     <div className={styles.container}>
@@ -22,6 +22,7 @@ const SingleProject = () => {
         <h2><span>project name: </span>{name}</h2>
         <p><span>project desc: </span>{desc}</p>
         <h4><span>used tool: </span>{tool}</h4>
+        <h4><span>url: </span>{url}</h4>
       </div>
     </div>
   )

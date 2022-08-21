@@ -5,14 +5,16 @@ const ProjectsData = [
     name: "Portfolio Project",
     image: `${require("./img/portfolio.png")}`,
     desc: "asdfqjwrlfdjqwlkjqwlkjqlkfjqklwljwlqfkjwqlkjql",
-    tool: "Html, Css, JavaScript, React"
+    tool: "Html, Css, JavaScript, React",
+    url: ""
   },
   {
     id: "m1",
     name: "ToyProject TransferMarket",
     image: `${require("./img/toyproject01.png")}`,
     desc: "asdfqjwrlfdjqwlkjqwlkjqlkfjqklwljwlqfkjwqlkjql",
-    tool: "Html, Css, JavaScript, React"
+    tool: "Html, Css, JavaScript, React",
+    url: ""
   },
   {
     id: "m2",
@@ -26,7 +28,8 @@ const ProjectsData = [
     name: "Dummy Project",
     image: "./img/portfolio.png",
     desc: "asdfqjwrlfdjqwlkjqwlkjqlkfjqklwljwlqfkjwqlkjql",
-    tool: "Html, Css, JavaScript, Angulr"
+    tool: "Html, Css, JavaScript, Angulr",
+    url: "joseph0926dummy.dummy"
   },
 ]
 

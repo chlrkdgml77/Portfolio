@@ -11,8 +11,8 @@
 .modal {
   position: absolute;
   top: 40%;
-  left: 5%;
-  width: 90%;
+  left: 30%;
+  width: 50rem;
   background-color: rgb(255, 255, 255);
   padding: 1rem;
   border-radius: 14px;
@@ -33,10 +33,31 @@
   margin-bottom: 2rem;
 }
 
-@media (min-width: 768px) {
+.button-container {
+  margin: 1.5rem 0;
+  position: absolute;
+  top: 100%;
+  left: 43%;
+}
+.prev-btn,
+.next-btn {
+  color: rgb(255, 1, 1);
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+.prev-btn:hover,
+.next-btn:hover {
+  color: rgb(252, 72, 72);
+}
+
+@media (max-width: 1024px) {
   .modal {
-    width: 40rem;
-    left: calc(50% - 20rem);
+    width: 30rem;
+    top: 20%;
+    left: 25%;
   }
 }
 
