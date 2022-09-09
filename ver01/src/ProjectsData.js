@@ -6,7 +6,7 @@ const ProjectsData = [
     image: `${require("./img/portfolio.png")}`,
     desc: "asdfqjwrlfdjqwlkjqwlkjqlkfjqklwljwlqfkjwqlkjql",
     tool: "Html, Css, JavaScript, React",
-    url: ""
+    url: "https://joseph0926-portfolio-ver01-97c40e.netlify.app/"
   },
   {
     id: "m1",
@@ -14,7 +14,7 @@ const ProjectsData = [
     image: `${require("./img/toyproject01.png")}`,
     desc: "asdfqjwrlfdjqwlkjqwlkjqlkfjqklwljwlqfkjwqlkjql",
     tool: "Html, Css, JavaScript, React",
-    url: ""
+    url: "https://joseph0926-toyproject-97c40e.netlify.app/"
   },
   {
     id: "m2",
