@@ -1,0 +1,88 @@
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  background-color: var(--body-color);
+}
+
+.nav {
+  max-width: 1024px;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--first-color);
+}
+.nav-toggle {
+  color: var(--title-color);
+  font-weight: 400;
+}
+
+.nav-logo:hover {
+  color: var(--first-color);
+}
+
+.nav-toggle {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.nav-toggle:hover {
+  color: var(--first-color);
+}
+
+@media screen and (max-width: 800px) {
+  .nav-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: all 0.3s ease;
+  }
+}
+
+.nav-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-right: 5rem;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  color: var(--title-color);
+  font-weight: 700;
+}
+.nav-link:hover {
+  color: var(--first-color);
+}
+
+.nav-link svg {
+  font-size: 1.3rem;
+}
+
+.nav-close {
+  position: absolute;
+  bottom: 5%;
+  left: 80%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--first-color);
+}
+.nav-close:hover {
+  color: var(--first-color-alt);
+}
