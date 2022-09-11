@@ -1,0 +1,1 @@
+const url = "https://futdb.app/api/doc"
