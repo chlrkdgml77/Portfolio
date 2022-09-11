@@ -3,17 +3,11 @@
 :root {
   --header-height: 3rem;
 
-  --main-color: 230;
-  --first-color: hsl(var(--main-color), 69%, 61%);
-  --first-color-second: hsl(var(--main-color), 69%, 61%);
-  --first-color-alt: hsl(var(--main-color), 57%, 53%);
-  --first-color-lighter: hsl(var(--main-color), 92%, 85%);
-  --title-color: hsl(var(--main-color), 8%, 15%);
-  --text-color: hsl(var(--main-color), 8%, 45%);
-  --text-color-light: hsl(var(--main-color), 8%, 65%);
-  --input-color: hsl(var(--main-color), 70%, 96%);
-  --body-color: hsl(var(--main-color), 60%, 99%);
-  --cotainer-color: #fff;
+  --color-bg: #1f1f38;
+  --color-bg-alt: #2c2c6c;
+  --color-pri: #4db5ff;
+  --color-pri-alt: rgba(77, 181, 255, 0.4);
+  --color-light: rgba(255, 255, 255, 0.6);
 
 };
 
@@ -29,8 +23,9 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: var(--body-color);
-  color: var(--text-color);
+  background: var(--color-bg);
+  color: #fff;
+  line-height: 1.7;
 }
 
 h1 {
@@ -46,7 +41,6 @@ h4 {
   font-size: 1.25rem;
 }
 h1,h2,h3,h4 {
-  color: var(--title-color);
   font-weight: 400;
 }
 h5 {

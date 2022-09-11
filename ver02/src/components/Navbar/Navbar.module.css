@@ -1,88 +1,64 @@
 .header {
-  width: 100%;
+  width: 13rem;
+  height: 100vh;
   position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 999;
-  background-color: var(--body-color);
+  top: -1%;
+  left: -1%;
 }
 
 .nav {
-  max-width: 1024px;
-  height: 5rem;
+  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 0 1rem;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(90deg, rgb(198, 206, 223), var(--color-bg));
 }
 
-.nav-logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--first-color);
-}
-.nav-toggle {
-  color: var(--title-color);
-  font-weight: 400;
+.nav-menu {
+  display: flex;
+  align-items: center;
+  margin-left: -4rem;
 }
 
-.nav-logo:hover {
-  color: var(--first-color);
-}
-
-.nav-toggle {
-  font-size: 1.1rem;
-  cursor: pointer;
-}
-.nav-toggle:hover {
-  color: var(--first-color);
-}
-
-@media screen and (max-width: 800px) {
-  .nav-menu {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--body-color);
-    padding: 2rem 1.5rem 4rem;
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 1.5rem 1.5rem 0 0;
-    transition: all 0.3s ease;
-  }
-}
-
-.nav-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-right: 5rem;
+.nav-list li {
+  margin: 4rem 0;
 }
 
 .nav-link {
+  color: var(--color-bg);
   display: flex;
-  flex-direction: column;
   align-items: center;
-  font-size: 1rem;
-  color: var(--title-color);
-  font-weight: 700;
-}
-.nav-link:hover {
-  color: var(--first-color);
-}
-
-.nav-link svg {
+  gap: 1rem;
   font-size: 1.3rem;
 }
 
 .nav-close {
   position: absolute;
-  bottom: 5%;
-  left: 80%;
-  font-size: 1.5rem;
+  top: 3%;
+  left: 75%;
+  border: none;
+  background: transparent;
   cursor: pointer;
-  color: var(--first-color);
 }
-.nav-close:hover {
-  color: var(--first-color-alt);
+.nav-close svg {
+  font-size: 2rem;
+  color: #fff;
 }
+
+.nav-toggle {
+  position: absolute;
+  top: 3%;
+  left: 75%;
+  cursor: pointer;
+}
+.nav-toggle button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #fff;
+}
+.nav-toggle svg {
+  font-size: 2rem;
+}
+

@@ -1,0 +1,32 @@
+.header {
+  background: rgba(0, 0, 0, .3);
+  width: max-content;
+  display: block;
+  padding: .7rem 1.7rem;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1rem;
+  display: flex;
+  gap: .8rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+}
+
+.nav-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 1rem;
+}
+
+.nav-item a {
+  background: transparent;
+  padding: .8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: 1.2rem;
+  color: var(--color-light);
+}
